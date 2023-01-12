@@ -91,6 +91,9 @@ function keyPressed(){
         game_over = !game_over
     }
 }
+function mouseClicked(){
+    game_over = false
+}
 function draw(){
 
         background(0)
@@ -105,7 +108,7 @@ function draw(){
         textSize(30)
         text("GAME OVER", 100, height/2)
         textSize(15)
-        text("Click to Enter again", 100, height/2 + 25)
+        text("Tap to play again", 100, height/2 + 25)
         
         s.update()
         s.render()
